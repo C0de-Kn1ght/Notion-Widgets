@@ -38,12 +38,21 @@ body {
   transition: opacity 0.4s ease-in-out;
 }
 
+.slide.current {
+  opacity: 1;
+}
+
 .slide:first-child {
-  background: url("1.png") no-repeat
+  background: url("3.png") no-repeat
     center top/cover;
 }
 
 .slide:nth-child(2) {
+  background: url("1.png") no-repeat
+    center top/cover;
+}
+
+.slide:nth-child(3) {
   background: url("2.png") no-repeat
     center top/cover;
 }
@@ -100,6 +109,8 @@ body {
   <div class="slider">
     <div class="slide current"></div>
     <div class="slide"></div>
+    <div class="slide"></div>
+
 
   </div>
   <div class="buttons">
